@@ -4,3 +4,4 @@
 [submodule "themes/loveit"]
 	path = themes/loveit
 	url = git@github.com:dillonzq/LoveIt.git
+	ignore = dirty

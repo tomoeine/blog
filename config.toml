@@ -1,7 +1,7 @@
 baseURL = "https://example.com/"
 languageCode = "en"                                      # website language
 defaultContentLanguage = "en"                            # [en, zh, ...] determines which i18n file to use
-title = "LoveIt Theme"                                   # website title
+title = "ともえーぬのブログ"                                   # website title
 theme = "LoveIt"                                         # theme
 enableGitInfo = false                                    # whether to use git commit log to generate lastmod record
 hasCJKLanguage = false                                   # whether to include chinese/japanese/korean
@@ -22,7 +22,7 @@ pygmentsCodefencesGuessSyntax = true
 staticDir = ["static", "../assets/others"]               # static directories
 
 [author]                                              #### Author Info
-  name = "XXXX"
+  name = "ともえ"
 
 [sitemap]                                             #### Sitemap Info
   changefreq = "weekly"
@@ -51,28 +51,16 @@ staticDir = ["static", "../assets/others"]               # static directories
     url = "categories"
     weight = 3
 
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "about"
-    weight = 4
-
-  [[menu.main]]
-    identifier = "zh"
-    name = '<i class="fas fa-language fa-fw"></i>'
-    url = "https://hugo-loveit-zh.netlify.com"
-    weight = 5
-
 [params]
   version = "5.x"                                        # LoveIt theme version
-  description = "LoveIt Theme Demo"                      # site description
-  keywords = ["XXXX", "Theme", "Hugo"]                   # site keywords
+  description = "ともえーぬのブログ"                      # site description
+  keywords = ["ともえーぬ", "ともえ", "宮崎", "エンジニア", "フリーランス"]                   # site keywords
 
                                                       #### Home Page Info
   home_mode = "post"                                     # [post, other] home mode
   home_paginate = 6                                      # special amount of posts in each home post page
   avatar = "images/avatar.png"                           # URL of avatar shown in home page
-  subtitle = "A Clean, Elegant but Advanced Hugo Theme"  # subtitle shown in home page
+  subtitle = "ともえ＠宮崎フリーランスエンジニア"  # subtitle shown in home page
 
   socialShare = true                                     # whether to show social share links in post page
 
@@ -117,13 +105,13 @@ staticDir = ["static", "../assets/others"]               # static directories
     email = ""
 
   [params.social]                                        # Social Info in home page
-    GitHub = "xxxx"
-    Linkedin = "xxxx"
-    Twitter = "xxxx"
+    GitHub = "tomoeine"
+    #Linkedin = "xxxx"
+    Twitter = "tomoeine"
     #Instagram = "xxxx"
     #Email = "xxxx"
-    Facebook = "xxxx"
-    Telegram = "xxxx"
+    Facebook = "tomoe.teshima.1"
+    #Telegram = "xxxx"
     #Medium = "xxxx"
     #Gitlab = "xxxx"
     #Youtubelegacy = "xxxx"
