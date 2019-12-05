@@ -51,6 +51,12 @@ staticDir = ["static", "../assets/others"]               # static directories
     url = "categories"
     weight = 3
 
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "about"
+    weight = 4
+
 [params]
   version = "5.x"                                        # LoveIt theme version
   description = "ともえーぬのブログ"                      # site description
@@ -232,3 +238,8 @@ staticDir = ["static", "../assets/others"]               # static directories
   section = ["HTML", "RSS"]
   taxonomy = ["HTML", "RSS"]
   taxonomyTerm = ["HTML"]
+
+[markup]
+  defaultMarkdownHandler = "blackfriday"
+  [markup.blackFriday]
+  hrefTargetBlank = true
