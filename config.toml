@@ -242,4 +242,17 @@ staticDir = ["static", "../assets/others"]               # static directories
 [markup]
   defaultMarkdownHandler = "blackfriday"
   [markup.blackFriday]
-  hrefTargetBlank = true
+    angledQuotes = false
+    footnoteAnchorPrefix = ""
+    footnoteReturnLinkContents = ""
+    fractions = true
+    hrefTargetBlank = true
+    latexDashes = true
+    nofollowLinks = false
+    noreferrerLinks = false
+    plainIDAnchors = true
+    skipHTML = false
+    smartDashes = true
+    smartypants = true
+    smartypantsQuotesNBSP = false
+    taskLists = true
