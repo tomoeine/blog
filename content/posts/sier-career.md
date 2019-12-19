@@ -1,7 +1,7 @@
 ---
 title: "「SIer でスキルが身につかない？」を、Web系フリーランスになった今振り返る"
-date: 2019-12-19T16:29:47+09:00
-draft: true
+date: 2019-12-20T08:29:47+09:00
+draft: false
 categories: ["雑記"]
 tags: ["SIer", "キャリア"]
 featured_image: ""
