@@ -1,0 +1,49 @@
+@startuml
+
+title ロバストネス図
+
+
+skinparam usecase {
+  BackgroundColor<< Step3 >> LightGrey
+}
+
+
+actor customer as customer_actor
+boundary トップ画面 as top_page
+boundary ログイン画面 as login_page #lightgray;line:gray
+boundary ボトル撮影画面 as take_photo_page
+boundary "restraunt 選択画面" as restraunt_selection_page
+boundary 完了画面 as complete_page
+control ログインする as login #lightgray;line:gray
+control "ログイン状態か？" as check_login
+control 写真をメモリー上に保存する as save_photo
+control "近隣の restraunt 一覧を検索する" as search_restraunt
+control "keeped_bottle を登録する" as save_keeped_bottle
+entity customer
+entity restraunt
+entity keeped_bottle
+usecase (restraunt を追加する) as add_restraunt #lightgray;line:gray
+
+' 基本コース
+customer_actor -right-> top_page
+top_page -right-> check_login
+check_login -right-> customer
+check_login -right-> take_photo_page : はい 
+take_photo_page -right-> save_photo : 写真を撮る
+save_photo -right-> search_restraunt
+search_restraunt -right-> restraunt
+search_restraunt --> restraunt_selection_page
+restraunt_selection_page --> save_keeped_bottle : "restraunt を選択する" 
+save_keeped_bottle --> keeped_bottle
+save_keeped_bottle --> complete_page
+
+' 代替コース
+check_login -down-> login_page #line:gray : いいえ
+login_page -down-> login #line:gray
+login --> customer #line:gray
+login --> take_photo_page #line:gray
+restraunt_selection_page -right-> add_restraunt #line:gray : "restraunt がない場合追加ボタンを押す"
+
+
+
+@enduml

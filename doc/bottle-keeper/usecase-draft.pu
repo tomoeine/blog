@@ -1,0 +1,26 @@
+@startuml
+
+title ボトルキープ ユースケース図
+
+left to right direction
+
+actor customer
+actor restraunt
+actor administrator
+
+usecase (restraunt を登録する) as register_restraunt
+
+customer --> (アカウントを登録する)
+customer --> (アカウントを更新する)
+customer --> (ボトルをキープする)
+customer --> (キープしたボトルを空ける)
+customer --> (keeped_bottle の残量を更新する)
+customer --> (自分の keeped_bottle 一覧を見る)
+customer --> register_restraunt
+restraunt -- (restraunt の管理者として申請する)
+restraunt -- (お店の keeped_bottle 一覧を見る)
+restraunt -- (keeped_bottle を捨てる)
+restraunt --> register_restraunt
+administrator -- (restraunt の管理者を承認する)
+
+@enduml
